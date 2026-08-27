@@ -1,2 +1,2 @@
-# governancekit
+# GovernanceKit
 GovernanceKit for AI Agents
