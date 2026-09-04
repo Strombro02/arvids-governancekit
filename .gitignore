@@ -6,6 +6,9 @@ __pycache__/
 # C extensions
 *.so
 
+# Don't add gitignore to git.
+.gitignore
+
 # Distribution / packaging
 .Python
 build/
