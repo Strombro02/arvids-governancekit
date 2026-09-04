@@ -35,6 +35,10 @@ log_path = os.path.join("testLogs/repair_example(500 traces).xes")
 # Parse and convert the log file into the event_log class variable. 
 event_log.parse_xes_log(log_path)
 
+# Print the .xes file in a readable fashion.
+print_less(event_log)
+
+
 ##############
 # Print the parsed log
 # Case == Trace.
@@ -64,5 +68,3 @@ print("--------------------------------------")
 print("Timestamp name:")
 print(event_log.get_timestamp_name())
 
-# Print the .xes file in a readable fashion.
-print_less(event_log)
