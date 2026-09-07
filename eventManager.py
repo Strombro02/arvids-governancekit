@@ -38,7 +38,6 @@ event_log.parse_xes_log(log_path)
 # Print the .xes file in a readable fashion.
 print_less(event_log)
 
-
 ##############
 # Print the parsed log
 # Case == Trace.
