@@ -67,6 +67,10 @@ def printLogInformation():
     print(event_log.get_timestamp_name())
 
 def ltlfExamples():
+
+    # Instatiate the Linear Temporal Logic Model.
+    # The model contains an attribute: formula that stores the formula as a string 
+    model = LTLModel()
     # This takes a formula String and saves it within the model.
     # C Release P.
     # It seems more or less that the model contains a Long string of Linear Temporal Logic. And the Model has methods to add to the formula string.
@@ -139,9 +143,7 @@ def ltlfExamples():
     # Parse and convert the log file into the event_log class variable. 
     event_log.parse_xes_log(log_path)
 
-    # Instatiate the Linear Temporal Logic Model.
-    # The model contains an attribute: formula that stores the formula as a string 
-    model = LTLModel()
+    
 
     # They use the LTLf syntax found 
     # "Always(E Release Triage (implicerar) Eventually (C Release  P))"
@@ -155,6 +157,7 @@ def ltlfExamples():
     formulaStr = "G(a -> WX b)"
 
     # This returns a LTLf formula object
+
     formulaObj = parser(formulaStr)
 
     # Prints the formula with the LTLf syntax. 
@@ -214,6 +217,7 @@ ModelPath = os.path.join("testLogs/data_model.decl")
 # data_model.decl starts the process rules where Existance2 is. Then Chain seems to add constraints to the model after.
 # This is a declare model and not a LTLModel. Therefore, it can not be printable later, since 
 model = DeclareModel().parse_from_file(ModelPath)
+
 
 # We check if the model from data_model.decl is satisfiable.
 print(f"Declare Model from File: {model.formula} ")
