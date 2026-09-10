@@ -63,6 +63,10 @@ confCheckRes: MPDeclareResultsBrowser = basicChecker.run()
 
 # The result of the run method is a ResultsBrowser object.
 # get_metric() can be used to retrieve conformance checking results. It takes the metrix parameter with values in num_pendings, num_activations, num_fulfillments, num_violations and state.
-print(confCheckRes.get_metric(trace_id=1, metric="num_activations"))
+print(confCheckRes.get_metric(trace_id=1, metric="num_fulfillments"))
+
+# Every column represents its own Declare Constraint and a Row is meant to show a trace and how many times each Declare constraint was activated, fulfilled, violated or pending. -- This explanation is good I think :) -- 
 
 # The prints are a table with rows that are the results of each trace according to the DECLARE constraints in the model. Each Column in the table represents the DECLARE constraints in the model. 
+
+# In testLogs I have a file containing the declare model separated onto 14 columns. I believe that each column is responsible for adding another set/single of constraints to the model. 
