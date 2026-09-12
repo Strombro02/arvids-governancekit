@@ -83,7 +83,7 @@ print(query_check_res.filter_query_checking(queries=['template', 'activation', '
 print("-------- New Example --------")
 
 # We do another query checking, but now for the template Response, with a higher support as well. 
-# IMPORTANT, this time we don't have an activation event, and therefore the QueryChecker has to figure out which events that can be an activation and which events can be the target event. The constraint that is being implemented are Resonse. 
+# IMPORTANT, this time we don't have an activation event, and therefore the QueryChecker has to figure out which events that can be an activation and which events can be the target event. The constraint that is being implemented are Response. 
 query_checker = DeclareQueryChecker(log=SepsisLog, consider_vacuity=False, template='Response', min_support=0.8, return_first=False)
 
 # Start the query checker. 
