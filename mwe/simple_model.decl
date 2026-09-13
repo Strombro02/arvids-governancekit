@@ -1,0 +1,5 @@
+activity book_ticket
+activity pay
+activity receive_ticket
+
+Response[book_ticket, pay] | | |

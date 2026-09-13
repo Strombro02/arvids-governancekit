@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<log xes.version="1.0"
+     xmlns="http://www.xes-standard.org/">
+
+    <trace>
+        <string key="concept:name" value="case_1"/>
+
+        <event>
+            <string key="concept:name" value="book_ticket"/>
+            <date key="time:timestamp" value="2026-09-14T20:00:00Z"/>
+        </event>
+
+        <event>
+            <string key="concept:name" value="pay"/>
+            <date key="time:timestamp" value="2026-09-14T20:01:00Z"/>
+        </event>
+
+        <event>
+            <string key="concept:name" value="receive_ticket"/>
+            <date key="time:timestamp" value="2026-09-14T20:02:00Z"/>
+        </event>
+    </trace>
+    <trace>
+        <string key="concept:name" value="case_2"/>
+
+        <event>
+            <string key="concept:name" value="book_ticket"/>
+            <date key="time:timestamp" value="2026-09-14T21:00:00Z"/>
+        </event>
+
+        <event>
+            <string key="concept:name" value="receive_ticket"/>
+            <date key="time:timestamp" value="2026-09-14T21:01:00Z"/>
+        </event>
+    </trace>
+
+</log>
